@@ -1,0 +1,14 @@
+.button_div {
+  border-radius: 22.5px;
+  background: var(--Orange, #fc7614);
+  height: 45px;
+  color: var(--Pure-White, #fff);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.867px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

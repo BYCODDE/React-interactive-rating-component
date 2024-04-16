@@ -1,19 +1,21 @@
-.text_div {
+.text_section {
+  margin-top: 16px;
+  width: 279px;
 }
 
-.text_div h2 {
+.text_section h2 {
   color: var(--Pure-White, #fff);
-  font-family: Overpass;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
-.text_div p {
+.text_section p {
   color: var(--Light-Grey, #969fad);
-  font-family: Overpass;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
-  line-height: 22px; 
+  line-height: 22px;
+  margin-top: 10px;
+  margin-bottom: 24px;
 }
