@@ -1,0 +1,19 @@
+.text_div {
+}
+
+.text_div h2 {
+  color: var(--Pure-White, #fff);
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.text_div p {
+  color: var(--Light-Grey, #969fad);
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; 
+}
