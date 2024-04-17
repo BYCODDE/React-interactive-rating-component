@@ -5,8 +5,10 @@
   margin-bottom: 24px;
 }
 .oval_section div {
+  cursor: pointer;
   position: relative;
 }
+
 .img_p {
   position: absolute;
   top: 50%;
@@ -19,4 +21,11 @@
   font-weight: 700;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.175px;
+}
+
+.oval_section img {
+  fill: var(--Orange, #fc7614);
+}
+.img_p:hover {
+  color: var(--Pure-White, #fff);
 }
