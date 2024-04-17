@@ -1,6 +1,6 @@
 import "./main.css";
 
-function Main({ submit }) {
+function Main2({ submit }) {
   return (
     <main>
       <p>You selected {submit} out of 5</p>
@@ -8,4 +8,4 @@ function Main({ submit }) {
   );
 }
 
-export default Main;
+export default Main2;

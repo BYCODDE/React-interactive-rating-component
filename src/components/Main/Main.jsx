@@ -1,9 +1,10 @@
-import "./main.css";
+import React, { useState } from 'react';
 import Star from "/images/Star.svg";
 import Text from "../Text/Text";
 import Ovals from "../Ovals/Ovals";
 import Button from "../Button/Button";
-import { useState } from "react";
+import Main2 from '../../components2/Main/Main2'; // Import the alternative Main component
+import "./main.css"
 function Main() {
   const [submit, setSubmit] = useState(null);
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -17,22 +18,29 @@ function Main() {
 
   const handleMainButtonClick = function () {
     if (!buttonClicked) {
-      console.log("button clicked");
       setButtonClicked(true);
     }
   };
 
+  // Render Main2 directly if condition is met, otherwise render Main1
   return (
-    <main className="main_element">
-      <img src={Star} alt="star_svg" />
-      <Text />
-      <Ovals
-        submit={submit}
-        handleClick={handleClick}
-        buttonClicked={buttonClicked}
-      />
-      <Button handleMainButtonClick={handleMainButtonClick} />
-    </main>
+    <>
+      {submit && buttonClicked ? (
+        <Main2 submit={submit} />
+      ) : (
+        <main className="main_element">
+          <img src={Star} alt="star_svg" />
+          <Text />
+          <Ovals
+            submit={submit}
+            handleClick={handleClick}
+            buttonClicked={buttonClicked}
+          />
+          <Button handleMainButtonClick={handleMainButtonClick} />
+        </main>
+      )}
+    </>
   );
 }
+
 export default Main;

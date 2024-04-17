@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import Main2 from "../../components2/Main/Main";
+import Main2 from "../../components2/Main/Main2";
 import "./oval.css";
 import Oval from "/images/Oval.svg";
 
