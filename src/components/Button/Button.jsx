@@ -2,10 +2,10 @@
 // import { useState } from "react";
 import "./button.css";
 
-function Button({handleClick }) {
+function Button({ handleMainButtonClick }) {
   return (
     <section className="button_section">
-      <div className="button_div" onClick={()=>[handleClick(1),handleClick(2)]} type="submit" >
+      <div className="button_div" type="submit" onClick={handleMainButtonClick}>
         SUBMIT
       </div>
     </section>
