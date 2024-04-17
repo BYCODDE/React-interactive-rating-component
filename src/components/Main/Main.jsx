@@ -1,13 +1,13 @@
-import "./main.css"
+import "./main.css";
 
 import Star from "/images/Star.svg";
 import Text from "../Text/Text";
-import Ovals from "../Ovals/Ovals"; // Assuming Text is another component
+import Ovals from "../Ovals/Ovals";
 import Button from "../Button/Button";
 import { useState } from "react";
 function Main() {
   const [submit, setSubmit] = useState(null);
-  const [buttonClicked, setButtonClicked] = useState(false); // Set to false initially
+  const [buttonClicked, setButtonClicked] = useState(false);
   const handleClick = function (submitIndex) {
     if (submit === submitIndex) {
       setSubmit(null);
@@ -18,9 +18,8 @@ function Main() {
 
   const handleMainButtonClick = function () {
     if (!buttonClicked) {
-      // Check if buttonClicked is false
       console.log("button clicked");
-      setButtonClicked(true); // Set to true after clicking
+      setButtonClicked(true);
     }
   };
 
