@@ -1,3 +1,5 @@
+import "./main.css"
+
 import Star from "/images/Star.svg";
 import Text from "../Text/Text";
 import Ovals from "../Ovals/Ovals"; // Assuming Text is another component
