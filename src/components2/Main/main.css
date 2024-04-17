@@ -6,4 +6,8 @@
     radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
   );
   padding: 34px 24px 37px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }

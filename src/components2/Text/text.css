@@ -1,0 +1,22 @@
+.text_div {
+  width: 279px;
+}
+
+.text_h3 {
+  color: var(--Pure-White, #fff);
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.text_p {
+  color: var(--Light-Grey, #969fad);
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
