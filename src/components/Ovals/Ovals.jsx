@@ -1,39 +1,30 @@
-import { useState } from "react";
+/* eslint-disable react/prop-types */
+
 import "./oval.css";
 import Oval from "/images/Oval.svg";
-function Ovals() {
-  const [submit, setSubmit] = useState(null);
 
-  const handleClick = function (submitIndex) {
-    if (submit === submitIndex) {
-      setSubmit(null);
-    } else {
-      setSubmit(submitIndex);
-    }
-  };
-
+function Ovals({ submit }) {
   return (
     <section className="oval_section">
-      <div onClick={()=> handleClick(1)}>
+      <div>
         <img src={Oval} alt="Oval1" />
         <p className="img_p">1</p>
-        {/* {submit === 1 && } */}
+        {submit === 1 ? <p>You selected {submit} out of 5</p> : null}
       </div>
-
-      <div  onClick={()=> handleClick(2)}>
+      <div>
         <img src={Oval} alt="Oval2" />
         <p className="img_p">2</p>
+        {submit === 2 ? <p>You selected {submit} out of 5</p> : null}
       </div>
-
-      <div onClick={()=> handleClick(3)}>
+      <div>
         <img src={Oval} alt="Oval3" />
         <p className="img_p">3</p>
       </div>
-      <div onClick={()=> handleClick(4)}>
+      <div>
         <img src={Oval} alt="Oval4" />
         <p className="img_p">4</p>
       </div>
-      <div onClick={()=> handleClick(5)}>
+      <div>
         <img src={Oval} alt="Oval5" />
         <p className="img_p">5</p>
       </div>

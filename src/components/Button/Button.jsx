@@ -1,15 +1,11 @@
+/* eslint-disable react/prop-types */
 // import { useState } from "react";
 import "./button.css";
 
-function Button() {
-  // const [submit, setSubmit] = useState(false);
-  const submitHandler = function () {
-    // TODO: submit-is dacheraze true unda iyos magis logica sheidzleba
-  };
-
+function Button({handleClick }) {
   return (
     <section className="button_section">
-      <div className="button_div" onClick={submitHandler}>
+      <div className="button_div" onClick={()=>[handleClick(1),handleClick(2)]} type="submit" >
         SUBMIT
       </div>
     </section>
