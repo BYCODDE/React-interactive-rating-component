@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Star from "/images/Star.svg";
 import Text from "../Text/Text";
 import Ovals from "../Ovals/Ovals";
 import Button from "../Button/Button";
-import Main2 from '../../components2/Main/Main2'; // Import the alternative Main component
-import "./main.css"
+import Main2 from "../../components2/Main/Main2"; // Import the alternative Main component
+import "./main.css";
 function Main() {
   const [submit, setSubmit] = useState(null);
   const [buttonClicked, setButtonClicked] = useState(false);
@@ -22,13 +22,13 @@ function Main() {
     }
   };
 
-  // Render Main2 directly if condition is met, otherwise render Main1
   return (
     <>
       {submit && buttonClicked ? (
         <Main2 submit={submit} />
       ) : (
         <main className="main_element">
+          {/* TODO: img დივზე შეცვალო და გავასწორო */}
           <img src={Star} alt="star_svg" />
           <Text />
           <Ovals
