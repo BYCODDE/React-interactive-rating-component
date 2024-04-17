@@ -1,10 +1,8 @@
 import "./main.css";
-
 import Star from "/images/Star.svg";
 import Text from "../Text/Text";
 import Ovals from "../Ovals/Ovals";
 import Button from "../Button/Button";
-
 import { useState } from "react";
 function Main() {
   const [submit, setSubmit] = useState(null);
