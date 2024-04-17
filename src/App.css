@@ -11,3 +11,34 @@ body {
   align-items: center;
   background: var(--Very-Dark-Blue, #131518);
 }
+
+@media only screen and (min-width: 768px) {
+  .main_element {
+    height: 416px !important;
+  }
+
+  .text_section {
+    margin-top: 30px !important;
+    width: 340px !important;
+  }
+  .main_element img {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .text_section h2 {
+    font-size: 28px !important;
+  }
+  .text_section p {
+    font-size: 15px !important;
+  }
+
+  .oval_section {
+    margin-bottom: 32px !important;
+  }
+
+  .oval_section img {
+    width: 51px !important;
+    height: 51px !important;
+  }
+}
