@@ -3,7 +3,7 @@ import Star from "/images/Star.svg";
 import Text from "../Text/Text";
 import Ovals from "../Ovals/Ovals";
 import Button from "../Button/Button";
-import Main2 from "../../components2/Main/Main2"; // Import the alternative Main component
+import Main2 from "../../components2/Main/Main2";
 import "./main.css";
 function Main() {
   const [submit, setSubmit] = useState(null);
@@ -28,7 +28,6 @@ function Main() {
         <Main2 submit={submit} />
       ) : (
         <main className="main_element">
-          {/* TODO: img დივზე შეცვალო და გავასწორო ,რომ დააკლიკებ მუქი და ჰოვერზე სტაფილოსფერი!*/}
           <img src={Star} alt="star_svg" />
           <Text />
           <Ovals
