@@ -34,3 +34,7 @@
   color: var(--Pure-White, #fff);
 }
 
+.clicked {
+  background: var(--Medium-Gray, #7c8798) !important;
+  color: var(--Pure-White, #fff) !important;
+}
