@@ -28,7 +28,7 @@ function Main() {
         <Main2 submit={submit} />
       ) : (
         <main className="main_element">
-          {/* TODO: img დივზე შეცვალო და გავასწორო */}
+          {/* TODO: img დივზე შეცვალო და გავასწორო ,რომ დააკლიკებ მუქი და ჰოვერზე სტაფილოსფერი!*/}
           <img src={Star} alt="star_svg" />
           <Text />
           <Ovals

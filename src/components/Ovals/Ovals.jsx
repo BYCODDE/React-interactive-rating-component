@@ -6,28 +6,23 @@ import Oval from "/images/Oval.svg";
 function Ovals({ submit, handleClick, buttonClicked }) {
   return (
     <section className="oval_section">
-      <div onClick={() => handleClick(1)}>
-        <img src={Oval} alt="Oval1" />
+      <div className="oval_div" onClick={() => handleClick(1)}>
         <p className="img_p">1</p>
         {submit === 1 && buttonClicked ? <Main2 submit={submit}></Main2> : null}
       </div>
-      <div onClick={() => handleClick(2)}>
-        <img src={Oval} alt="Oval2" />
+      <div className="oval_div" onClick={() => handleClick(2)}>
         <p className="img_p">2</p>
         {submit === 2 && buttonClicked ? <Main2 submit={submit}></Main2> : null}
       </div>
-      <div onClick={() => handleClick(3)}>
-        <img src={Oval} alt="Oval3" />
+      <div className="oval_div" onClick={() => handleClick(3)}>
         <p className="img_p">3</p>
         {submit === 3 && buttonClicked ? <Main2 submit={submit}></Main2> : null}
       </div>
-      <div onClick={() => handleClick(4)}>
-        <img src={Oval} alt="Oval4" />
+      <div className="oval_div" onClick={() => handleClick(4)}>
         <p className="img_p">4</p>
         {submit === 4 && buttonClicked ? <Main2 submit={submit}></Main2> : null}
       </div>
-      <div onClick={() => handleClick(5)}>
-        <img src={Oval} alt="Oval5" />
+      <div className="oval_div" onClick={() => handleClick(5)}>
         <p className="img_p">5</p>
         {submit === 5 && buttonClicked ? <Main2 submit={submit}></Main2> : null}
       </div>

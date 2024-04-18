@@ -7,8 +7,15 @@
 .oval_section div {
   cursor: pointer;
   position: relative;
+  border-radius: 50%;
+  width: 51px;
+  height: 51px;
+  background: var(--Dark-Blue, #262e38);
 }
-
+.oval_section div:hover {
+  background: var(--Orange, #fc7614);
+  color: var(--Pure-White, #fff);
+}
 .img_p {
   position: absolute;
   top: 50%;
@@ -23,9 +30,7 @@
   letter-spacing: 0.175px;
 }
 
-.oval_section img {
-  fill: var(--Orange, #fc7614);
-}
 .img_p:hover {
   color: var(--Pure-White, #fff);
 }
+
